@@ -1,0 +1,13 @@
+<h1 class="text-xl font-bold">
+  Teams
+</h1>
+
+<%= link_to "Add a team", new_team_path, class: "hover:underline text-gray-600" %>
+
+<ul>
+  <% @teams.order(name: :desc).each do |team| %>
+    <li>
+      <%= link_to team.name, team %>
+    </li>
+  <% end %>
+</ul>

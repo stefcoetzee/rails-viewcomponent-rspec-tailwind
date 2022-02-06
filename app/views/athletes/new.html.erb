@@ -1,0 +1,45 @@
+<h1 class="text-xl font-bold">
+  Create a new athlete
+</h1>
+
+<%= form_with model: [@team, @athlete] do |f| %>
+  <div class="mt-2">
+    <div>
+      <%= f.label :first_name %>
+    </div>
+    <div>
+      <%= f.text_field :first_name %>
+    </div>
+  </div>
+
+  <div class="mt-2">
+    <div>
+      <%= f.label :last_name %>
+    </div>
+    <div>
+      <%= f.text_field :last_name %>
+    </div>
+  </div>
+
+  <div class="mt-2">
+    <div>
+      <%= f.label :position %>
+    </div>
+    <div>
+      <%= f.text_field :position %>
+    </div>
+  </div>
+
+  <div class="mt-2">
+    <div>
+      <%= f.label :jersey_number %>
+    </div>
+    <div>
+      <%= f.number_field :jersey_number %>
+    </div>
+  </div>
+
+  <div class="w-32 py-2 mt-4 font-medium text-center text-white bg-gray-800 rounded-full cursor-pointer">
+    <%= f.submit "Add athlete", class: "cursor-pointer" %>
+  </div>
+<% end %>

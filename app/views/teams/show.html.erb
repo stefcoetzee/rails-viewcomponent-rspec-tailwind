@@ -1,0 +1,43 @@
+<h1 class="text-xl font-bold">
+  <%= @team.name %>
+</h1>
+
+<div>
+  Team details follow below.
+</div>
+
+<div>
+  <%= link_to "Add a player", new_team_athlete_path(@team),
+      class: "hover:underline text-gray-600" %>
+</div>
+
+<div class="table w-full">
+  <div class="table-header-group">
+    <div class="table-row">
+      <div class="table-cell font-semibold text-left">
+        Last Name
+      </div>
+      <div class="table-cell font-semibold text-left">
+        First Name
+      </div>
+      <div class="table-cell font-semibold text-left">
+        Position
+      </div>
+    </div>
+  </div>
+  <div class="table-row-group">
+    <% @team.athletes.order(last_name: :asc).each do |athlete| %>
+      <div class="table-row">
+        <div class="table-cell">
+          <%= link_to athlete.last_name, athlete %>
+        </div>
+        <div class="table-cell">
+          <%= link_to athlete.first_name, athlete %>
+        </div>
+        <div class="table-cell">
+          <%= link_to athlete.position, athlete %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

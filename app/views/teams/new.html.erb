@@ -1,0 +1,18 @@
+<h1 class="text-xl font-bold">
+  Add a new team
+</h1>
+
+<%= form_with model: @team do |f| %>
+  <div class="mt-2">
+    <div>
+      <%= f.label :name %>
+    </div>
+    <div>
+      <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="w-32 py-2 mt-4 font-medium text-center text-white bg-gray-800 rounded-full cursor-pointer">
+    <%= f.submit "Add team", class: "cursor-pointer" %>
+  </div>
+<% end%>
