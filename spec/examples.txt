@@ -1,0 +1,4 @@
+example_id                 | status | run_time        |
+-------------------------- | ------ | --------------- |
+./spec/models/team.rb[1:1] | passed | 0.33445 seconds |
+./spec/models/team.rb[1:2] | passed | 0.05213 seconds |

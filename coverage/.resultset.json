@@ -1,6 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/scz/repos/play/rails/view-component-rspec/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/models/team.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/home/scz/repos/play/rails/view-component-rspec/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -115,14 +137,6 @@
         "branches": {
         }
       },
-      "/home/scz/repos/play/rails/view-component-rspec/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/home/scz/repos/play/rails/view-component-rspec/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -146,15 +160,6 @@
         "branches": {
         }
       },
-      "/home/scz/repos/play/rails/view-component-rspec/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/home/scz/repos/play/rails/view-component-rspec/app/models/athlete.rb": {
         "lines": [
           0,
@@ -167,19 +172,8 @@
         ],
         "branches": {
         }
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/models/team.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1644156706
+    "timestamp": 1644206908
   }
 }
