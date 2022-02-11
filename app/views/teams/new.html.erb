@@ -2,7 +2,21 @@
   Add a new team
 </h1>
 
-<%= form_with model: @team do |f| %>
+<%= form_with model: @team, data: { turbo: false } do |f| %>
+  <% if @team.errors.any? %>
+    <div>
+      <%= pluralize(@team.errors.count, "error") %>
+      prevented this team from being saved:
+    </div>
+    <ul>
+      <% @team.errors.full_messages.each do |msg| %>
+        <li>
+          <%= msg %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
   <div class="mt-2">
     <div>
       <%= f.label :name %>

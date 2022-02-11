@@ -1,26 +1,75 @@
-<h1 class="text-xl font-bold">
+<h1 class="mb-1 text-xl font-bold">
   <%= @team.name %>
 </h1>
 
-<div>
-  Team details follow below.
+<div class="flex pb-1 mb-2 space-x-3 border-b">
+  <div>
+    <%= link_to edit_team_path(@team) do %>
+      <div class="flex items-center space-x-1 text-gray-600 hover:underline">
+        <div>
+          <svg class="h-4" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+            </path>
+          </svg>
+        </div>
+        <div>
+          Edit team
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to team_path(@team), data: {
+          turbo_method: :delete,
+          turbo_confirm: "Are you sure?"
+        } do %>
+      <div class="flex items-center space-x-1 text-gray-600 hover:underline">
+        <div>
+          <svg class="h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+            </path>
+          </svg>
+        </div>
+        <div>
+          Delete team
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
 
-<div>
-  <%= link_to "Add a player", new_team_athlete_path(@team),
-      class: "hover:underline text-gray-600" %>
+<div class="mt-2 mb-2">
+  <%= link_to new_team_athlete_path(@team) do %>
+  <div class="flex items-center space-x-1 text-gray-600 hover:underline">
+    <div>
+      <svg class="h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+        </path>
+      </svg>
+    </div>
+    <div>
+      Add a player
+    </div>
+  </div>
+<% end %>
 </div>
 
 <div class="table w-full">
   <div class="table-header-group">
-    <div class="table-row">
-      <div class="table-cell font-semibold text-left">
+    <div class="table-row h-8">
+      <div class="table-cell font-semibold text-left border-b">
         Last Name
       </div>
-      <div class="table-cell font-semibold text-left">
+      <div class="table-cell font-semibold text-left border-b">
         First Name
       </div>
-      <div class="table-cell font-semibold text-left">
+      <div class="table-cell font-semibold text-left border-b">
         Position
       </div>
     </div>

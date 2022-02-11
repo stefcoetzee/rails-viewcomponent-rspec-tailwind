@@ -1,5 +1,5 @@
 class AthletesController < ApplicationController
-  before_action :set_athlete, only: [:show]
+  before_action :set_athlete, only: [:show, :edit, :update]
   before_action :set_team, only: [:new, :create]
 
   def show
@@ -11,8 +11,21 @@ class AthletesController < ApplicationController
 
   def create
     @athlete = @team.athletes.create(athlete_params) # create is equivalent to build/new (equivalent) + save
+    flash[:notice] = "Player has been added."
     redirect_to team_path(@team)
   end
+
+  def edit
+  end
+
+  def update
+    if @athlete.update(athlete_params)
+      redirect_to @athlete
+    else
+      render "edit"
+    end
+  end
+
 
   private
 

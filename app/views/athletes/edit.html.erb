@@ -1,8 +1,8 @@
 <h1 class="text-xl font-bold">
-  Add a new player
+  Edit player details
 </h1>
 
-<%= form_with model: [@team, @athlete], data: { turbo: false } do |f| %>
+<%= form_with model: @athlete, data: { turbo: false } do |f| %>
   <div class="mt-2">
     <div>
       <%= f.label :first_name %>
@@ -40,6 +40,6 @@
   </div>
 
   <div class="w-32 py-2 mt-4 font-medium text-center text-white bg-gray-800 rounded-full cursor-pointer">
-    <%= f.submit "Add player", class: "cursor-pointer" %>
+    <%= f.submit "Update player", class: "cursor-pointer" %>
   </div>
 <% end %>

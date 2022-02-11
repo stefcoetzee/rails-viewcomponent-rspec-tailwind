@@ -273,7 +273,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  capybara
+  capybara (~> 3.36)
   debug
   factory_bot_rails (~> 6.0)
   faker
@@ -284,13 +284,13 @@ DEPENDENCIES
   rails (~> 7.0.1)
   redis (~> 4.0)
   rspec-rails (~> 5.0)
+  selenium-webdriver (~> 4.1)
   simplecov
   sprockets-rails
   standard (~> 1)
   stimulus-rails
   tailwindcss-rails
   turbo-rails
-  tzinfo-data
   web-console
   webdrivers
 

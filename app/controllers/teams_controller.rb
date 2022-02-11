@@ -1,5 +1,5 @@
 class TeamsController < ApplicationController
-  before_action :set_team, only: [:show]
+  before_action :set_team, only: [:show, :edit, :update, :destroy]
 
   def index
     @teams = Team.all
@@ -15,10 +15,27 @@ class TeamsController < ApplicationController
   def create
     @team = Team.new(team_params)
     if @team.save
-      redirect_to root_url
+      redirect_to @team
     else
       render "new"
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @team.update(team_params)
+      redirect_to @team
+    else
+      render "edit"
+    end
+  end
+
+  def destroy
+    @team.destroy
+    flash[:notice] = 'Team has been deleted.'
+    redirect_to teams_path, status: :see_other
   end
 
   private
