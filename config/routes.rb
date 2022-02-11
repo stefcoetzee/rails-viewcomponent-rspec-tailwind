@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root "teams#index"
 
   resources :teams do
-    resources :athletes, only: [:new, :create, :index, :destroy]
+    resources :athletes, only: [:new, :create, :index]
   end
 
-  resources :athletes, only: [:show, :edit, :update]
+  resources :athletes, only: [:show, :edit, :update, :destroy]
 end

@@ -8,7 +8,7 @@ RSpec.feature "Teams can be deleted" do
     visit team_path(team1)
   end
 
-  scenario "successfully" do
+  scenario "successfully", js: true do
     click_link "Delete team"
     accept_alert
 

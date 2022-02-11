@@ -23,6 +23,80 @@
           null
         ]
       },
+      "/home/scz/repos/play/rails/view-component-rspec/app/models/athlete.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/athletes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/scz/repos/play/rails/view-component-rspec/app/controllers/teams_controller.rb": {
         "lines": [
           1,
@@ -72,25 +146,8 @@
           null,
           null,
           1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/models/athlete.rb": {
-        "lines": [
-          1,
           1,
           null,
-          1,
-          1,
-          1,
           null
         ]
       },
@@ -106,56 +163,6 @@
       },
       "/home/scz/repos/play/rails/view-component-rspec/app/channels/application_cable/connection.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/athletes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -188,6 +195,6 @@
         }
       }
     },
-    "timestamp": 1644552828
+    "timestamp": 1644555255
   }
 }

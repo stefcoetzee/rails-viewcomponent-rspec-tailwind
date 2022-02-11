@@ -1,6 +1,6 @@
 class AthletesController < ApplicationController
-  before_action :set_athlete, only: [:show, :edit, :update]
-  before_action :set_team, only: [:new, :create]
+  before_action :set_athlete, only: [:show, :edit, :update, :destroy]
+  before_action :set_team, only: [:new, :create, :destroy]
 
   def show
   end
@@ -26,6 +26,11 @@ class AthletesController < ApplicationController
     end
   end
 
+  def destroy
+    @athlete.destroy
+    flash[:notice] = "Player has been removed."
+    redirect_to team_path(@team), status: :see_other
+  end
 
   private
 
@@ -39,6 +44,10 @@ class AthletesController < ApplicationController
   end
 
   def set_team
-    @team = Team.find(params[:team_id])
+    if params[:team_id].present?
+      @team = Team.find(params[:team_id])
+    else
+      @team = Team.find(Athlete.find(params[:id]).team_id)
+    end
   end
 end

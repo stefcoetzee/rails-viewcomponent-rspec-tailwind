@@ -3,6 +3,7 @@ example_id                                   | status | run_time        |
 ./spec/features/create_athletes_spec.rb[1:1] | passed | 0.57384 seconds |
 ./spec/features/create_teams_spec.rb[1:1]    | passed | 6.24 seconds    |
 ./spec/features/create_teams_spec.rb[1:2]    | passed | 0.50571 seconds |
+./spec/features/delete_athletes_spec.rb[1:1] | passed | 1.48 seconds    |
 ./spec/features/delete_teams_spec.rb[1:1]    | failed | 0.41666 seconds |
 ./spec/features/edit_athletes_spec.rb[1:1]   | passed | 0.04345 seconds |
 ./spec/features/edit_teams_spec.rb[1:1]      | passed | 0.03238 seconds |
