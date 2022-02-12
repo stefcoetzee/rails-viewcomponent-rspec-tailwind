@@ -224,6 +224,6 @@ Athlete.create(
   first_name: "Willie",
   last_name: "Le Roux",
   position: "Fullback",
-  jersey_number: 8,
+  jersey_number: 15,
   team: team2
 )

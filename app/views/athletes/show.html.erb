@@ -45,7 +45,7 @@
 </div>
 
 <div class="flex-col space-y-2">
-  <div>
+  <div class="max-w-fit">
     <%= link_to edit_athlete_path(@athlete) do %>
       <div class="flex items-center space-x-1 text-gray-600 transition duration-300 border-b border-white max-w-fit hover:border-b hover:border-gray-400">
         <div>
@@ -62,7 +62,7 @@
       </div>
     <% end %>
   </div>
-  <div>
+  <div class="max-w-fit">
     <%= link_to athlete_path(@athlete), data: {
           turbo_method: :delete,
           turbo_confirm: "Are you sure?"

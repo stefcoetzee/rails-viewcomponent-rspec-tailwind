@@ -112,5 +112,7 @@
 <% else %>
   <div>
     Players are listed here.
+    <%= link_to "Add one now", new_team_athlete_path(@team), class: "hover:underline text-gray-600" %>
+    to start filling out the roster.
   </div>
 <% end %>
