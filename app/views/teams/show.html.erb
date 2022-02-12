@@ -20,10 +20,10 @@
   <%= @team.name %>
 </h1>
 
-<div class="flex pb-1 mb-2 space-x-3 border-b">
+<div class="flex pb-2 mb-2 space-x-3 border-b">
   <div>
     <%= link_to edit_team_path(@team) do %>
-      <div class="flex items-center space-x-1 text-gray-600 hover:underline">
+      <div class="flex items-center space-x-1 text-gray-600 transition duration-300 border-b border-white max-w-fit hover:border-b hover:border-gray-400">
         <div>
           <svg class="w-4" fill="none" stroke="currentColor"
             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
 
 <div class="table w-full">
   <div class="table-header-group">
-    <div class="table-row h-8">
+    <div class="table-row h-7">
       <div class="table-cell font-semibold text-left border-b">
         Last Name
       </div>
