@@ -6,10 +6,18 @@
   <%= link_to "Add a team", new_team_path, class: "hover:underline text-gray-600" %>
 </div>
 
-<ul>
-  <% @teams.order(name: :desc).each do |team| %>
-    <li>
-      <%= link_to team.name, team %>
-    </li>
-  <% end %>
-</ul>
+<% if @teams.any? %>
+  <ul>
+    <% @teams.order(name: :desc).each do |team| %>
+      <li>
+        <%= link_to team.name, team %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <div>
+    Teams are listed here.
+    Go ahead and
+    <%= link_to "create one", new_team_path, class: "hover:underline text-gray-600" %>.
+  </div>
+<% end %>
