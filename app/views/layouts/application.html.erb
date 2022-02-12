@@ -14,8 +14,18 @@
   <body>
     <main class="container px-5 mx-auto mt-28">
       <% flash.each do |key, message| %>
-        <div class="alert alert-<%= key %> mb-1">
-          <%= message %>
+        <div class="alert-<%= key %> flex items-center mb-1 space-x-1 italic text-gray-600">
+          <div>
+            <svg class="w-5" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+          </div>
+          <div>
+            <%= message %>
+          </div>
         </div>
       <% end %>
       <%= yield %>

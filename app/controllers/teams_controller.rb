@@ -15,6 +15,7 @@ class TeamsController < ApplicationController
   def create
     @team = Team.new(team_params)
     if @team.save
+      flash[:notice] = "Team has been created."
       redirect_to @team
     else
       render "new"
@@ -26,6 +27,7 @@ class TeamsController < ApplicationController
 
   def update
     if @team.update(team_params)
+      flash[:notice] = "Team has been updated."
       redirect_to @team
     else
       render "edit"

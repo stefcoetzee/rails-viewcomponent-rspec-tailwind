@@ -20,6 +20,7 @@ class AthletesController < ApplicationController
 
   def update
     if @athlete.update(athlete_params)
+      flash[:notice] = "Player has been updated."
       redirect_to @athlete
     else
       render "edit"
