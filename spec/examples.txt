@@ -11,3 +11,4 @@ example_id                                   | status | run_time        |
 ./spec/models/athlete.rb[1:2]                | passed | 0.4876 seconds  |
 ./spec/models/team.rb[1:1]                   | passed | 0.00301 seconds |
 ./spec/models/team.rb[1:2]                   | passed | 0.35526 seconds |
+./spec/system/create_athlete_spec.rb[1:1]    | passed | 0.93811 seconds |
