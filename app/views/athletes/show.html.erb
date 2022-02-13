@@ -25,21 +25,41 @@
       <%= @athlete.last_name %>
     </div>
   </div>
-  <div class="flex space-x-1">
-    <div>
-      <%= link_to @athlete.team.name, team_path(@athlete.team) %>
+
+  <div class="flex flex-col space-y-1 sm:flex-row sm:space-y-0 sm:space-x-1">
+    <div class="flex space-x-2 sm:space-x-0">
+      <div class="font-bold text-gray-500 sm:hidden">
+        &middot;
+      </div>
+      <div>
+        <%= link_to @athlete.team.name, team_path(@athlete.team) %>
+      </div>
     </div>
-    <div class="font-bold text-gray-500">
+
+    <div class="hidden font-bold text-gray-500 sm:inline">
       &middot;
     </div>
-    <div>
-      <%= @athlete.position %>
+
+    <div class="flex space-x-2 sm:space-x-0">
+      <div class="font-bold text-gray-500 sm:hidden">
+        &middot;
+      </div>
+      <div>
+        <%= @athlete.position %>
+      </div>
     </div>
-    <div class="font-bold text-gray-500">
+
+    <div class="hidden font-bold text-gray-500 sm:inline">
       &middot;
     </div>
-    <div>
-      #<%= @athlete.jersey_number %>
+
+    <div class="flex space-x-2 sm:space-x-0">
+      <div class="font-bold text-gray-500 sm:hidden">
+        &middot;
+      </div>
+      <div>
+        #<%= @athlete.jersey_number %>
+      </div>
     </div>
   </div>
 </div>

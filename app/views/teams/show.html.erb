@@ -88,7 +88,7 @@
         <th class="pb-1.5 text-left border-b">
           First name
         </th>
-        <th class="pb-1.5 text-left border-b">
+        <th class="pb-1.5 text-left border-b hidden sm:table-cell">
           Position
         </th>
       </tr>
@@ -102,7 +102,7 @@
         <td class="<%= "pt-1.5" if index == 0 %>">
           <%= link_to athlete.first_name, athlete %>
         </td>
-        <td class="<%= "pt-1.5" if index == 0 %>">
+        <td class="<%= "pt-1.5" if index == 0 %> hidden sm:table-cell">
           <%= link_to athlete.position, athlete %>
         </td>
       </tr>
