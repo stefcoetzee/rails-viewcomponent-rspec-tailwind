@@ -29,7 +29,7 @@ class AthletesController < ApplicationController
 
   def destroy
     @athlete.destroy
-    flash[:notice] = "Player has been removed."
+    flash[:notice] = "Player has been deleted."
     redirect_to team_path(@team), status: :see_other
   end
 

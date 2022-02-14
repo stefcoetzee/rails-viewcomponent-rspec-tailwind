@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Athletes can be edited" do
+RSpec.describe "Athletes can be edited" do
   let(:team) { FactoryBot.create(:team) }
   let(:athlete) { FactoryBot.create(:athlete, team: team) }
 
@@ -8,7 +8,7 @@ RSpec.feature "Athletes can be edited" do
     visit athlete_path(athlete)
   end
 
-  scenario "successfully" do
+  it "successfully" do
     click_link "Edit player details"
     new_first_name = Faker::Name.first_name
     new_last_name = Faker::Name.last_name

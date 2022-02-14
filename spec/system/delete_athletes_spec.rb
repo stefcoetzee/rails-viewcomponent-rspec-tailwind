@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Athletes can be deleted" do
+RSpec.describe "Athletes can be deleted" do
   let(:team) { FactoryBot.create(:team) }
   let(:athlete) { FactoryBot.create(:athlete, team: team) }
 
@@ -8,12 +8,12 @@ RSpec.feature "Athletes can be deleted" do
     visit athlete_path(athlete)
   end
 
-  scenario "successfully", js: true do
-    click_link "Remove player"
+  it "successfully", js: true do
+    click_link "Delete player"
     accept_alert
 
-    expect(page).to have_content "Player has been removed."
+    expect(page).to have_content "Player has been deleted."
+    expect(page).to_not have_content athlete.first_name
     expect(page).to_not have_content athlete.last_name
-    expect(page).to_not have_content athlete.jersey_number
   end
 end
