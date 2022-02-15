@@ -6,6 +6,8 @@ require_relative "../config/environment"
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require "rspec/rails"
 # Add additional requires below this line. Rails is not loaded until this point!
+require "view_components/test_helpers"
+require "capybara/rspec"
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -61,6 +63,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.include ViewComponent::TestHelper, type: :component
+  config.include Capybara::RSpecMatchers, type: :component
 end
 
 Capybara.javascript_driver = :selenium_chrome_headless
