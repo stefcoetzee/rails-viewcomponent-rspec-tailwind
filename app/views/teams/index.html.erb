@@ -1,6 +1,8 @@
-<h1 class="pb-2 mb-2 text-xl font-bold border-b">
-  Teams
-</h1>
+<div class="mb-2">
+  <%= render PageHeaderComponent.new do %>
+    <%= render PageTitleComponent.new(title: "Teams") %>
+  <% end %>
+</div>
 
 <div class="mt-4 mb-4">
   <%= link_to new_team_path do %>

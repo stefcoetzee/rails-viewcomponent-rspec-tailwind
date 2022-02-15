@@ -1,5 +1,5 @@
 <div class="mb-1">
-  <%= link_to teams_path do %>
+  <%= link_to team_path(@team) do %>
     <div class="flex items-center space-x-1 text-gray-600 transition duration-300 border-b border-white max-w-fit hover:border-b hover:border-gray-400">
       <div>
         <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -10,7 +10,7 @@
         </svg>
       </div>
       <div>
-        Back to teams
+        Back to team
       </div>
     </div>
   <% end %>
