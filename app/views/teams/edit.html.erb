@@ -1,7 +1,10 @@
 <div class="mb-2">
   <%= render PageHeaderComponent.new do %>
     <div class="mb-1">
-      <%= render BackNavigationComponent.new(path: teams_path, text: "teams") %>
+      <%= render BackNavigationComponent.new(
+        href: team_path(@team),
+        text: "team"
+      ) %>
     </div>
     <%= render PageTitleComponent.new(title: "Edit team") %>
   <% end %>

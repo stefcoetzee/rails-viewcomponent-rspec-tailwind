@@ -1,7 +1,7 @@
 <div class="mb-2">
   <div class="mb-1">
     <%= render BackNavigationComponent.new(
-          path: team_path(@athlete.team),
+          href: team_path(@athlete.team),
           text: "team"
     ) %>
   </div>
@@ -60,8 +60,8 @@
 
 <div class="flex-col space-y-2">
   <%= render EditLinkComponent.new(
-        path: edit_athlete_path(@athlete),
+        href: edit_athlete_path(@athlete),
         text: "player details"
       ) %>
-  <%= render DeleteLinkComponent.new(path: athlete_path(@athlete), text: "player") %>
+  <%= render DeleteLinkComponent.new(href: athlete_path(@athlete), text: "player") %>
 </div>

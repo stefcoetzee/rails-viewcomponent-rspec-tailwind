@@ -1,8 +1,20 @@
-example_id                                 | status | run_time        |
------------------------------------------- | ------ | --------------- |
-./spec/models/athlete.rb[1:1]              | passed | 0.00826 seconds |
-./spec/models/athlete.rb[1:2]              | passed | 0.4876 seconds  |
-./spec/models/team.rb[1:1]                 | passed | 0.00301 seconds |
-./spec/models/team.rb[1:2]                 | passed | 0.35526 seconds |
-./spec/system/delete_athletes_spec.rb[1:1] | passed | 2.42 seconds    |
-./spec/system/edit_athletes_spec.rb[1:1]   | passed | 0.90285 seconds |
+example_id                                               | status  | run_time        |
+-------------------------------------------------------- | ------- | --------------- |
+./spec/components/add_link_component_spec.rb[1:1]        | passed  | 0.05845 seconds |
+./spec/components/application_component_spec.rb[1:1]     | pending | 0.00001 seconds |
+./spec/components/back_navigation_component_spec.rb[1:1] | pending | 0.00003 seconds |
+./spec/components/delete_link_component_spec.rb[1:1]     | pending | 0.00001 seconds |
+./spec/components/edit_link_component_spec.rb[1:1]       | pending | 0 seconds       |
+./spec/components/page_header_component_spec.rb[1:1]     | passed  | 0.054 seconds   |
+./spec/components/page_title_component_spec.rb[1:1]      | pending | 0.00001 seconds |
+./spec/models/athlete.rb[1:1]                            | passed  | 0.00826 seconds |
+./spec/models/athlete.rb[1:2]                            | passed  | 0.4876 seconds  |
+./spec/models/team.rb[1:1]                               | passed  | 0.00301 seconds |
+./spec/models/team.rb[1:2]                               | passed  | 0.35526 seconds |
+./spec/system/create_athletes_spec.rb[1:1]               | passed  | 0.6785 seconds  |
+./spec/system/create_teams_spec.rb[1:1]                  | passed  | 0.03775 seconds |
+./spec/system/create_teams_spec.rb[1:2]                  | passed  | 0.06685 seconds |
+./spec/system/delete_athletes_spec.rb[1:1]               | passed  | 0.60022 seconds |
+./spec/system/delete_teams_spec.rb[1:1]                  | passed  | 1.62 seconds    |
+./spec/system/edit_athletes_spec.rb[1:1]                 | passed  | 0.05845 seconds |
+./spec/system/edit_teams_spec.rb[1:1]                    | passed  | 0.09121 seconds |

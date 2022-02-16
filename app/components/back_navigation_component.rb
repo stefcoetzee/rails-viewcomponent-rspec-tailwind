@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class BackNavigationComponent < ApplicationComponent
-  def initialize(path:, text:)
-    @path = path
+  def initialize(href:, text:)
+    @href = href
     @text = text
   end
 

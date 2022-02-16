@@ -2,7 +2,7 @@
   <%= render PageHeaderComponent.new do %>
     <div class="mb-1">
     <%= render BackNavigationComponent.new(
-          path: teams_path,
+          href: teams_path,
           text: "teams"
     ) %>
     </div>
@@ -10,15 +10,15 @@
       <%= render PageTitleComponent.new(title: @team.name) %>
     </div>
     <div class="flex space-x-3">
-      <%= render EditLinkComponent.new(path: edit_team_path(@team), text: "team") %>
-      <%= render DeleteLinkComponent.new(path: team_path(@team), text: "team") %>
+      <%= render EditLinkComponent.new(href: edit_team_path(@team), text: "team") %>
+      <%= render DeleteLinkComponent.new(href: team_path(@team), text: "team") %>
     </div>
   <% end %>
 </div>
 
 <div class="mt-4 mb-4">
   <%= render AddLinkComponent.new(
-    path: new_team_athlete_path(@team), text: "player"
+    href: new_team_athlete_path(@team), text: "player"
   ) %>
 </div>
 

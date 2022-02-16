@@ -2,7 +2,7 @@
   <%= render PageHeaderComponent.new do %>
     <div class="mb-1">
       <%= render BackNavigationComponent.new(
-        path: team_path(@team), text: "team"
+        href: team_path(@team), text: "team"
       ) %>
     </div>
     <%= render PageTitleComponent.new(title: "Add a new player") %>

@@ -1,13 +1,10 @@
 require "rails_helper"
 
 RSpec.describe PageHeaderComponent, type: :component do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "renders a page header" do
+    render_inline(PageHeaderComponent.new.with_content("content"))
 
-  # it "renders something useful" do
-  #   expect(
-  #     render_inline(described_class.new(attr: "value")) { "Hello, components!" }.css("p").to_html
-  #   ).to include(
-  #     "Hello, components!"
-  #   )
-  # end
+
+    expect(rendered_component).to include("content")
+  end
 end
