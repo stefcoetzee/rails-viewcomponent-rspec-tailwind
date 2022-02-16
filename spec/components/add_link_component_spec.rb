@@ -9,6 +9,5 @@ RSpec.describe AddLinkComponent, type: :component do
     )
 
     expect(rendered_component).to have_link "Add a #{test_text}", href: test_url
-    # expect(rendered_component).to have_content
   end
 end

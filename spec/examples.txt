@@ -5,7 +5,7 @@ example_id                                               | status  | run_time   
 ./spec/components/back_navigation_component_spec.rb[1:1] | pending | 0.00003 seconds |
 ./spec/components/delete_link_component_spec.rb[1:1]     | pending | 0.00001 seconds |
 ./spec/components/edit_link_component_spec.rb[1:1]       | pending | 0 seconds       |
-./spec/components/page_header_component_spec.rb[1:1]     | passed  | 0.054 seconds   |
+./spec/components/page_header_component_spec.rb[1:1]     | passed  | 0.04034 seconds |
 ./spec/components/page_title_component_spec.rb[1:1]      | pending | 0.00001 seconds |
 ./spec/models/athlete.rb[1:1]                            | passed  | 0.00826 seconds |
 ./spec/models/athlete.rb[1:2]                            | passed  | 0.4876 seconds  |
