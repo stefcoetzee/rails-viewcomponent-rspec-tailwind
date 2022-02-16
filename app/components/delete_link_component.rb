@@ -5,5 +5,4 @@ class DeleteLinkComponent < ApplicationComponent
     @href = href
     @text = text
   end
-
 end

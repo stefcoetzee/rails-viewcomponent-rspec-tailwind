@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class AddLinkComponent < ApplicationComponent
+class AddLinkComponent < LinkComponent
   def initialize(href:, text:)
-    @href = href
+    super(href: href)
     @text = text
   end
 end
