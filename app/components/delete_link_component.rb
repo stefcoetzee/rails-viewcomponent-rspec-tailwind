@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class DeleteLinkComponent < ApplicationComponent
+class DeleteLinkComponent < LinkComponent
   def initialize(href:, text:)
     @href = href
     @text = text

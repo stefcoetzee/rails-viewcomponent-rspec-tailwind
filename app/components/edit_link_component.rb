@@ -2,7 +2,7 @@
 
 class EditLinkComponent < LinkComponent
   def initialize(href:, text:)
-    super(href: href)
+    @href = href
     @text = text
   end
 end
