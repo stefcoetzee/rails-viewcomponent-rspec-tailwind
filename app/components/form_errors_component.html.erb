@@ -1,0 +1,13 @@
+<div class="text-red-600">
+  <div>
+    <%= pluralize(@resource.errors.count, "error") %>
+    prevented this <%= @descriptor %> from being saved:
+  </div>
+  <ul class="list-disc list-inside">
+    <% @resource.errors.full_messages.each do |msg| %>
+      <li>
+        <%= msg %>
+      </li>
+    <% end %>
+  </ul>
+</div>

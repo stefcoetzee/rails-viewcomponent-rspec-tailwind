@@ -11,6 +11,13 @@
 </div>
 
 <%= form_with model: @athlete, data: { turbo: false } do |f| %>
+  <% if @athlete.errors.any? %>
+    <%= render FormErrorsComponent.new(
+      resource: @athlete,
+      descriptor: "player"
+    ) %>
+  <% end %>
+
   <div class="mt-2">
     <div>
       <%= f.label :first_name %>

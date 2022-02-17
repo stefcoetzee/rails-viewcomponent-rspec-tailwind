@@ -10,9 +10,14 @@ class AthletesController < ApplicationController
   end
 
   def create
-    @athlete = @team.athletes.create(athlete_params) # create is equivalent to build/new (equivalent) + save
-    flash[:notice] = "Player has been added."
-    redirect_to team_path(@team)
+    @athlete = @team.athletes.new(athlete_params)
+    if @athlete.save
+      flash[:notice] = "Player has been added."
+      redirect_to team_path(@team)
+    else
+      flash[:notice] = "Player has not been added."
+      render "new"
+    end
   end
 
   def edit
@@ -23,6 +28,7 @@ class AthletesController < ApplicationController
       flash[:notice] = "Player has been updated."
       redirect_to @athlete
     else
+      flash[:notice] = "Player has not been updated."
       render "edit"
     end
   end
