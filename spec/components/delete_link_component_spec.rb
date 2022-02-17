@@ -1,13 +1,11 @@
 require "rails_helper"
 
 RSpec.describe DeleteLinkComponent, type: :component do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "renders a delete link" do
+    test_url = "https://example.com"
+    test_text = "player"
+    render_inline(described_class.new(href: test_url, text: test_text))
 
-  # it "renders something useful" do
-  #   expect(
-  #     render_inline(described_class.new(attr: "value")) { "Hello, components!" }.css("p").to_html
-  #   ).to include(
-  #     "Hello, components!"
-  #   )
-  # end
+    expect(rendered_component).to have_link "Delete #{test_text}", href: test_url
+  end
 end

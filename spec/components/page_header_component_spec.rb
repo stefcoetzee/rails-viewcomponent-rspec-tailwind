@@ -1,9 +1,10 @@
 require "rails_helper"
 
 RSpec.describe PageHeaderComponent, type: :component do
-  it "renders a page header" do
-    render_inline(PageHeaderComponent.new.with_content("content"))
+  it "renders content" do
+    test_text = "content"
+    render_inline(described_class.new.with_content(test_text))
 
-    expect(rendered_component).to include("content")
+    expect(rendered_component).to include(test_text)
   end
 end
