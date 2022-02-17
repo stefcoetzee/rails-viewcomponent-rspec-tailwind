@@ -1,24 +1,11 @@
-<div class="mb-1">
-  <%= link_to teams_path do %>
-    <div class="flex items-center space-x-1 text-gray-600 transition duration-300 border-b border-white max-w-fit hover:border-b hover:border-gray-400">
-      <div>
-        <svg class="w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M10 19l-7-7m0 0l7-7m-7 7h18">
-          </path>
-        </svg>
-      </div>
-      <div>
-        Back to teams
-      </div>
+<div class="mb-2">
+  <%= render PageHeaderComponent.new do %>
+    <div class="mb-1">
+      <%= render BackNavigationComponent.new(href: teams_path, text: "teams") %>
     </div>
+    <%= render PageTitleComponent.new(title: "Add a new team") %>
   <% end %>
 </div>
-
-<h1 class="text-xl font-bold">
-  Add a new team
-</h1>
 
 <%= form_with model: @team, data: { turbo: false } do |f| %>
   <% if @team.errors.any? %>
