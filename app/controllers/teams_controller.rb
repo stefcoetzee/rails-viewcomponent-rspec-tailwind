@@ -31,6 +31,7 @@ class TeamsController < ApplicationController
       flash[:notice] = "Team has been updated."
       redirect_to @team
     else
+      flash[:notice] = "Team has not been updated."
       render "edit"
     end
   end

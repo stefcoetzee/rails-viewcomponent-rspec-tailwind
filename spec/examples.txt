@@ -19,4 +19,5 @@ example_id                                               | status | run_time    
 ./spec/system/delete_athletes_spec.rb[1:1]               | passed | 1.02 seconds    |
 ./spec/system/delete_teams_spec.rb[1:1]                  | passed | 0.22118 seconds |
 ./spec/system/edit_athletes_spec.rb[1:1]                 | passed | 0.04924 seconds |
-./spec/system/edit_teams_spec.rb[1:1]                    | passed | 0.03501 seconds |
+./spec/system/edit_teams_spec.rb[1:1]                    | passed | 0.03632 seconds |
+./spec/system/edit_teams_spec.rb[1:2]                    | passed | 0.46845 seconds |
