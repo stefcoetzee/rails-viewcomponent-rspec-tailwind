@@ -13,11 +13,13 @@ example_id                                               | status | run_time    
 ./spec/models/athlete.rb[1:2]                            | passed | 0.4876 seconds  |
 ./spec/models/team.rb[1:1]                               | passed | 0.00301 seconds |
 ./spec/models/team.rb[1:2]                               | passed | 0.35526 seconds |
-./spec/system/create_athletes_spec.rb[1:1]               | passed | 0.07043 seconds |
+./spec/system/create_athletes_spec.rb[1:1]               | passed | 0.06392 seconds |
+./spec/system/create_athletes_spec.rb[1:2]               | passed | 0.52762 seconds |
 ./spec/system/create_teams_spec.rb[1:1]                  | passed | 0.45904 seconds |
 ./spec/system/create_teams_spec.rb[1:2]                  | passed | 0.02427 seconds |
 ./spec/system/delete_athletes_spec.rb[1:1]               | passed | 1.02 seconds    |
 ./spec/system/delete_teams_spec.rb[1:1]                  | passed | 0.22118 seconds |
-./spec/system/edit_athletes_spec.rb[1:1]                 | passed | 0.04924 seconds |
+./spec/system/edit_athletes_spec.rb[1:1]                 | passed | 0.49065 seconds |
+./spec/system/edit_athletes_spec.rb[1:2]                 | passed | 0.05397 seconds |
 ./spec/system/edit_teams_spec.rb[1:1]                    | passed | 0.03632 seconds |
 ./spec/system/edit_teams_spec.rb[1:2]                    | passed | 0.46845 seconds |

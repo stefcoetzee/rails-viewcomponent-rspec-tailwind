@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Athletes can be edited" do
+RSpec.describe "Athletes" do
   let(:team) { FactoryBot.create(:team) }
   let(:athlete) { FactoryBot.create(:athlete, team: team) }
 
@@ -8,7 +8,7 @@ RSpec.describe "Athletes can be edited" do
     visit athlete_path(athlete)
   end
 
-  it "successfully" do
+  it "can be edited with valid attributes" do
     click_link "Edit player details"
     new_first_name = Faker::Name.first_name
     new_last_name = Faker::Name.last_name
@@ -25,5 +25,21 @@ RSpec.describe "Athletes can be edited" do
     expect(page).to have_content new_last_name
     expect(page).to have_content new_position
     expect(page).to have_content "##{new_jersey_number.to_i}"
+  end
+
+  it "cannot be edited with valid attributes" do
+    click_link "Edit player details"
+
+    fill_in "First name", with: ""
+    fill_in "Last name", with: ""
+    fill_in "Position", with: ""
+    fill_in "Jersey number", with: ""
+    click_button "Update player"
+
+    expect(page).to have_content "Player has not been updated."
+    expect(page).to have_content "First name can't be blank"
+    expect(page).to have_content "Last name can't be blank"
+    expect(page).to have_content "Position can't be blank"
+    expect(page).to have_content "Jersey number can't be blank"
   end
 end

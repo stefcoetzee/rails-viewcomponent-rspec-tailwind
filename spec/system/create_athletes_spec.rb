@@ -29,4 +29,18 @@ RSpec.describe "New athletes", type: :system do
     expect(page).to have_content position
     expect(page).to have_content "##{jersey_number.to_i}"
   end
+
+  it "cannot be created with invalid attributes" do
+    fill_in "First name", with: ""
+    fill_in "Last name", with: ""
+    fill_in "Position", with: ""
+    fill_in "Jersey number", with: ""
+    click_button "Add player"
+
+    expect(page).to have_content "Player has not been added."
+    expect(page).to have_content "First name can't be blank"
+    expect(page).to have_content "Last name can't be blank"
+    expect(page).to have_content "Position can't be blank"
+    expect(page).to have_content "Jersey number can't be blank"
+  end
 end
