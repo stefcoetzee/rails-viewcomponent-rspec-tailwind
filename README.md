@@ -1,7 +1,7 @@
 # Rails ViewComponents with Tailwind CSS and RSpec
 
-This is the companion repo for its namesake
-[blog post](https://stefcoetzee.com/2022/02/18/rails-viewcomponent-rspec-tailwind).
+This is the companion repo for its
+[blog-post namesake](https://stefcoetzee.com/2022/02/18/rails-viewcomponent-rspec-tailwind).
 
 Join in the fun by checking out the `start-here` branch and coding along as
 you progress deeper into the guide.
