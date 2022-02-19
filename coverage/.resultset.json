@@ -7,6 +7,111 @@
           null
         ]
       },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/add_link_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          15,
+          15,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/link_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/application_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/back_navigation_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          27,
+          27,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/delete_link_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          15,
+          15,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/edit_link_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          15,
+          15,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/form_errors_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          5,
+          5,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/page_header_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/components/page_title_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          32,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/scz/repos/play/rails/view-component-rspec/app/models/team.rb": {
         "lines": [
           1,
@@ -35,6 +140,64 @@
           null
         ]
       },
+      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/teams_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          14,
+          null,
+          null
+        ]
+      },
       "/home/scz/repos/play/rails/view-component-rspec/app/controllers/athletes_controller.rb": {
         "lines": [
           1,
@@ -45,17 +208,17 @@
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          2,
+          2,
+          1,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null,
@@ -73,121 +236,28 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
           1,
           null,
           1,
-          2,
+          4,
           null,
           null,
           null,
           1,
-          7,
+          10,
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/back_navigation_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          6,
-          6,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/link_component.rb": {
-        "lines": [
-          null,
+          5,
+          4,
           null,
           1,
           null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/application_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/page_header_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/page_title_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          6,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/edit_link_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/delete_link_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/form_errors_component.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           null
         ]
@@ -204,80 +274,6 @@
       },
       "/home/scz/repos/play/rails/view-component-rspec/app/channels/application_cable/connection.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/components/add_link_component.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/scz/repos/play/rails/view-component-rspec/app/controllers/teams_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -310,6 +306,6 @@
         }
       }
     },
-    "timestamp": 1645153999
+    "timestamp": 1645245930
   }
 }

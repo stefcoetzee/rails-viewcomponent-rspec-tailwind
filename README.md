@@ -1,24 +1,25 @@
-# README
+# Rails ViewComponents with Tailwind CSS and RSpec
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the companion repo for its namesake blog post.
 
-Things you may want to cover:
+Join in the fun by checking out the `start-here` branch and coding along as
+you progress deeper into the guide.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+The `main` branch contains the app in its transformed state.
+Whether you choose to use that or the pre-ViewComponent branch mentioned
+above, the follow instructions will work the same either way.
 
-* Configuration
+```bash
+# Install dependencies
+bundle install
 
-* Database creation
+# Create the test and development databases
+bin/rails db:create
+# Seed the database with example data
+bin/rails db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Start the development server
+bin/dev
+```
