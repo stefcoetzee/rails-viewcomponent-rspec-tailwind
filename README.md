@@ -1,5 +1,12 @@
 # Rails ViewComponents with Tailwind CSS and RSpec
 
+Confidently develop Rails app views with reusable components.
+
+Make front-end development more ergonomic by cutting down on duplication across your app, 
+while leaving your code base more maintainable and providing a consistent user experience.
+
+Follow along from the comfort of your own editor as we refactor a fully-tested example application.
+
 This is the companion repo for its
 [blog-post namesake](https://stefcoetzee.com/2022/02/18/rails-viewcomponent-rspec-tailwind).
 
